@@ -27,6 +27,7 @@ import {
   FiSlack,
 } from "react-icons/fi";
 
+
 export async function Layout({ children }: { children: React.ReactNode }) {
   const tasks = [getAuthTypeMetadataSS(), getCurrentUserSS()];
 
