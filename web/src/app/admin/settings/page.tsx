@@ -1,6 +1,6 @@
 import { AdminPageTitle } from "@/components/adminPageComponents/Title";
 import { FiSettings } from "react-icons/fi";
-import { Settings } from "./interfaces";
+import { Settings } from "@/interfaces/admin/settings/interfaces";
 import { fetchSS } from "@/lib/utilsSS";
 import { SettingsForm } from "@/components/adminPageComponents/settings/AdminSettingsForm";
 import { Callout, Text } from "@tremor/react";

@@ -27,7 +27,7 @@ import { personaComparator } from "@/lib/admin/helpers";
 import { ChatPage } from "@/components/chatPageComponents/ChatPage";
 import { FullEmbeddingModelResponse } from "../admin/models/embedding/embeddingModels";
 import { NoCompleteSourcesModal } from "@/components/initialSetup/search/NoCompleteSourceModal";
-import { Settings } from "../admin/settings/interfaces";
+import { Settings } from "@/interfaces/admin/settings/interfaces";
 import { fetchLLMProvidersSS } from "@/lib/llm/fetchLLMs";
 import { LLMProviderDescriptor } from "../../interfaces/admin/llm/interfaces";
 import { Folder } from "@/components/chatPageComponents/folders/interfaces";

@@ -1,4 +1,4 @@
-import { EnterpriseSettings, Settings } from "@/app/admin/settings/interfaces";
+import { EnterpriseSettings, Settings } from "@/interfaces/admin/settings/interfaces";
 import { CUSTOM_ANALYTICS_ENABLED, EE_ENABLED } from "@/lib/constants";
 import { fetchSS } from "@/lib/utilsSS";
 
