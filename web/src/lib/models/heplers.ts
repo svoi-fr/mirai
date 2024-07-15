@@ -1,13 +1,7 @@
 import { EmbeddingModelDescriptor, FullEmbeddingModelDescriptor, INVALID_OLD_MODEL } from "@/interfaces/admin/models/models";
 
 export function checkModelNameIsValid(modelName: string | undefined | null) {
-    if (!modelName) {
-      return false;
-    }
-    if (modelName === INVALID_OLD_MODEL) {
-      return false;
-    }
-    return true;
+    !modelName || modelName === INVALID_OLD_MODEL ? false : true
   }
   
   export function fillOutEmeddingModelDescriptor(
