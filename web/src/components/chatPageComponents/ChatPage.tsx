@@ -16,12 +16,9 @@ import {
   ToolRunKickoff,
 } from "./interfaces";
 import { ChatSidebar } from "./sessionSidebar/ChatSessionSidebar";
-import { DocumentSet, Tag, User, ValidSources } from "@/lib/types";
 import { Persona } from "@/interfaces/persona";
-import { Header } from "@/components/header/Header";
 import { HealthCheckBanner } from "@/components/health/healthcheck";
 import { InstantSSRAutoRefresh } from "@/components/SSRAutoRefresh";
-import { Settings } from "@/app/admin/settings/interfaces";
 import {
   buildChatUrl,
   buildLatestMessageChain,
@@ -53,14 +50,11 @@ import { DanswerInitializingLoader } from "@/components/DanswerInitializingLoade
 import { FeedbackModal } from "./modal/ChatModalFeedback";
 import { ShareChatSessionModal } from "./modal/ChatModalShareChatSessionWrapper";
 import { ChatPersonaSelector } from "./ChatPersonaSelector";
-import { HEADER_PADDING } from "@/lib/constants";
 import { FiSend, FiShare2, FiStopCircle } from "react-icons/fi";
 import { ChatIntro } from "./ChatIntro";
 import { AIMessage, HumanMessage } from "./message/ChatMessages";
 import { ThreeDots } from "react-loader-spinner";
 import { StarterMessage } from "./ChatStarterMessage";
-import { SelectedDocuments } from "./modifiers/ChatModifiersSelectedDocuments";
-import { ChatFilters } from "./modifiers/ChatModifiersFilters";
 import { AnswerPiecePacket, DanswerDocument } from "@/lib/search/interfaces";
 import { buildFilters } from "@/lib/search/utils";
 import { SettingsContext } from "@/components/settings/SettingsProvider";
