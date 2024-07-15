@@ -14,7 +14,7 @@ import {
 } from "@/lib/types";
 import { ChatSession } from "@/components/chatPageComponents/interfaces";
 import { unstable_noStore as noStore } from "next/cache";
-import { Persona } from "../../lib/admin/interfaces";
+import { Persona } from "@/interfaces/persona";
 import { InstantSSRAutoRefresh } from "@/components/SSRAutoRefresh";
 import {
   WelcomeModal,
@@ -29,7 +29,7 @@ import { FullEmbeddingModelResponse } from "../admin/models/embedding/embeddingM
 import { NoCompleteSourcesModal } from "@/components/initialSetup/search/NoCompleteSourceModal";
 import { Settings } from "../admin/settings/interfaces";
 import { fetchLLMProvidersSS } from "@/lib/llm/fetchLLMs";
-import { LLMProviderDescriptor } from "../admin/models/llm/interfaces";
+import { LLMProviderDescriptor } from "../../interfaces/admin/llm/interfaces";
 import { Folder } from "@/components/chatPageComponents/folders/interfaces";
 import { ChatProvider } from "@/components/context/ChatContext";
 
