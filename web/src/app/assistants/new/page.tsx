@@ -10,31 +10,6 @@ import { ErrorCallout } from "@/components/ErrorCallout";
 export default async function Page() {
   const [values, error] = await fetchAssistantEditorInfoSS();
 
-  let body;
-  if (!values) {
-    body = (
-      <div className="px-32">
-        <ErrorCallout errorTitle="Something went wrong :(" errorMsg={error} />
-      </div>
-    );
-  } else {
-    body = (
-      <div className="w-full my-16">
-        <div className="px-32">
-          <div className="mx-auto container">
-            <Card>
-              <AssistantEditor
-                {...values}
-                defaultPublic={false}
-                redirectType={SuccessfulPersonaUpdateRedirectType.CHAT}
-              />
-            </Card>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div>
       <HeaderWrapper>
@@ -53,7 +28,28 @@ export default async function Page() {
         </div>
       </HeaderWrapper>
 
-      {body}
+      {!values && error && (
+        <div className="px-32">
+          <ErrorCallout errorTitle="Something went wrong :(" errorMsg={error} />
+        </div>
+      )}
+
+      {values && (
+        <div className="w-full my-16">
+          <div className="px-32">
+            <div className="mx-auto container">
+              <Card>
+                <AssistantEditor
+                  {...values}
+                  defaultPublic={false}
+                  redirectType={SuccessfulPersonaUpdateRedirectType.CHAT}
+                />
+              </Card>
+            </div>
+          </div>
+        </div>
+      )}
+      
     </div>
   );
 }
