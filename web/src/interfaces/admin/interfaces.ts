@@ -18,8 +18,6 @@ export interface Prompt {
   default_prompt: boolean;
 }
 
-
-
 export interface PersonaCreationRequest {
   name: string;
   description: string;

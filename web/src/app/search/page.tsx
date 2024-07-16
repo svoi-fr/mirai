@@ -20,7 +20,8 @@ import {
 import { unstable_noStore as noStore } from "next/cache";
 import { InstantSSRAutoRefresh } from "@/components/SSRAutoRefresh";
 import { personaComparator } from "@/lib/admin/helpers";
-import { FullEmbeddingModelResponse } from "../admin/models/embedding/embeddingModels";
+
+import { FullEmbeddingModelResponse } from "@/interfaces/admin/models/models";
 import { NoSourcesModal } from "@/components/initialSetup/search/NoSourcesModal";
 import { NoCompleteSourcesModal } from "@/components/initialSetup/search/NoCompleteSourceModal";
 
