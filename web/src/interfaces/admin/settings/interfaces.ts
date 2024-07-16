@@ -7,8 +7,6 @@ export interface Settings {
 export interface EnterpriseSettings {
   application_name: string | null;
   use_custom_logo: boolean;
-
-  // custom Chat components
   custom_header_content: string | null;
   custom_popup_header: string | null;
   custom_popup_content: string | null;
