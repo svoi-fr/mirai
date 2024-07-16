@@ -11,42 +11,6 @@ import { DeletePersonaButton } from "@/components/adminPageComponents/assistants
 export default async function Page({ params }: { params: { id: string } }) {
   const [values, error] = await fetchAssistantEditorInfoSS(params.id);
 
-  let body;
-  if (!values) {
-    body = (
-      <div className="px-32">
-        <ErrorCallout errorTitle="Something went wrong :(" errorMsg={error} />
-      </div>
-    );
-  } else {
-    body = (
-      <div className="w-full my-16">
-        <div className="px-32">
-          <div className="mx-auto container">
-            <Card>
-              <AssistantEditor
-                {...values}
-                defaultPublic={false}
-                redirectType={SuccessfulPersonaUpdateRedirectType.CHAT}
-              />
-            </Card>
-
-            <Title className="mt-12">Delete Assistant</Title>
-            <Text>
-              Click the button below to permanently delete this assistant.
-            </Text>
-            <div className="flex mt-6">
-              <DeletePersonaButton
-                personaId={values.existingPersona!.id}
-                redirectType={SuccessfulPersonaUpdateRedirectType.CHAT}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div>
       <HeaderWrapper>
@@ -65,7 +29,39 @@ export default async function Page({ params }: { params: { id: string } }) {
         </div>
       </HeaderWrapper>
 
-      {body}
+
+      {!values && error && (
+        <div className="px-32">
+          <ErrorCallout errorTitle="Something went wrong :(" errorMsg={error} />
+        </div>
+      )}
+
+      {values && (
+        <div className="w-full my-16">
+          <div className="px-32">
+            <div className="mx-auto container">
+              <Card>
+                <AssistantEditor
+                  {...values}
+                  defaultPublic={false}
+                  redirectType={SuccessfulPersonaUpdateRedirectType.CHAT}
+                />
+              </Card>
+
+              <Title className="mt-12">Delete Assistant</Title>
+              <Text>
+                Click the button below to permanently delete this assistant.
+              </Text>
+              <div className="flex mt-6">
+                <DeletePersonaButton
+                  personaId={values.existingPersona!.id}
+                  redirectType={SuccessfulPersonaUpdateRedirectType.CHAT}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
