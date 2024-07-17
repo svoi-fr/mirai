@@ -1,7 +1,7 @@
 import { Popup } from "../adminPageComponents/connectors/Popup";
 import { useState } from "react";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@tremor/react";
-import { WellKnownLLMProviderDescriptor } from "@/app/admin/models/llm/interfaces";
+import { WellKnownLLMProviderDescriptor } from "@/interfaces/admin/llm/interfaces";
 import { LLMProviderUpdateForm } from "@/components/adminPageComponents/models/llm/AdminModelsLLMProviderUpdateForm";
 import { CustomLLMProviderUpdateForm } from "@/components/adminPageComponents/models/llm/AdminModelsLLMCustomProviderUpdateForm";
 

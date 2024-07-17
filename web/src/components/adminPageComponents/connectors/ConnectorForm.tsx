@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import { Popup, usePopup } from "./Popup";
+import { Popup } from "./Popup";
+import { usePopup } from "@/hooks/common/usePopup";
 import {
   Connector,
   ConnectorBase,

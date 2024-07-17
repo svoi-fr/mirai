@@ -12,7 +12,7 @@ import {
   Divider,
 } from "@tremor/react";
 import { IndexAttemptStatus } from "@/components/Status";
-import { CCPairFullInfo } from "@/app/admin/connector/[ccPairId]/types";
+import { CCPairFullInfo } from "@/interfaces/connector/interfaces";
 import { useState } from "react";
 import { PageSelector } from "@/components/PageSelector";
 import { localizeAndPrettify } from "@/lib/time";

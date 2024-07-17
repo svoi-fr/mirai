@@ -10,7 +10,7 @@ import {
 } from "@/lib/types";
 import { ChatSession } from "@/components/chatPageComponents/interfaces";
 import { Persona } from "@/interfaces/persona";
-import { LLMProviderDescriptor } from "@/app/admin/models/llm/interfaces";
+import { LLMProviderDescriptor } from "@/interfaces/admin/llm/interfaces";
 import { Folder } from "@/components/chatPageComponents/folders/interfaces";
 
 interface ChatContextProps {

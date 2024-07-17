@@ -53,7 +53,7 @@ export function LlmTab({
     };
   };
   llmProviders.forEach((llmProvider) => {
-    llmProvider.model_names.forEach((modelName) => {
+    llmProvider.model_names.forEach((modelName: string) => {
       llmOptions.push({
         name: modelName,
         value: structureValue(

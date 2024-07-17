@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@tremor/react";
-import { CCPairFullInfo } from "@/app/admin/connector/[ccPairId]/types";
+import { CCPairFullInfo } from "@/interfaces/connector/interfaces";
 import { usePopup } from "@/hooks/common/usePopup";
 import { disableConnector } from "@/lib/connector";
 import { mutate } from "swr";

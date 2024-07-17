@@ -1,4 +1,5 @@
-import { Persona, PersonaCreationRequest, PersonaUpdateRequest  } from "./interfaces";
+import { PersonaCreationRequest, PersonaUpdateRequest  } from "./interfaces";
+import { Persona } from "@/interfaces/persona";
 
 function promptNameFromPersonaName(personaName: string) {
   return `default-prompt__${personaName}`;
