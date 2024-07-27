@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import StyledButton from "../components/button/styled-button";
+import StyledLink from "../components/link/link";
 
 export default function Home() {
   return (
@@ -15,6 +17,10 @@ export default function Home() {
           Здесь работаем
         </h1>
       </main>
+      <StyledButton onClick={() => console.log("Button clicked")}>Start Chatting</StyledButton>
+      <StyledLink href="/about">About</StyledLink>
+      <StyledButton variant='secondary' onClick={() => console.log("Button clicked")}>Fund us</StyledButton>
+      <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink>
 
       <footer className={styles.footer}>
         <a
