@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styled-button.module.css';
 import cn from 'classnames';
 
-interface ButtonProps {
+type ButtonProps = {
   children: React.ReactNode;
   onClick: () => void;
   variant?: 'primary' | 'secondary';
