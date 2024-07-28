@@ -1,0 +1,54 @@
+.box {
+    background: rgba(255,255,255,0.06);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.16);
+    padding: 23px 33px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+  
+  
+.h {
+    color: #ffffff;
+    font-family: "Lexend Deca-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    left: 103px;
+    letter-spacing: -0.48px;
+    line-height: 28px;
+    top: 33px;
+    white-space: nowrap;
+    width: 236px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+  
+.textWrapper {
+    color: #ffffff;
+    font-family: "Lexend Deca-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 101px;
+    letter-spacing: 0;
+    line-height: 23.5px;
+    top: 78px;
+}
+  
+.icon {
+    -webkit-backdrop-filter: blur(50px) brightness(100%);
+    backdrop-filter: blur(50px) brightness(100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(29, 39, 53, 0.1) 0%, rgba(145.03, 164.29, 191.25, 0.1) 100%);
+    border-radius: 60px;
+    height: 60px;
+    left: 23px;
+    top: 32px;
+    width: 60px;
+}

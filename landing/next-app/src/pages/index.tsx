@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 import StyledButton from "../components/button/styled-button";
 import StyledLink from "../components/link/link";
 import Menu from "../components/menu/menu";
+import { Advantage } from "../components/advantage/advantage";
+
+import advantages from '../consts/advantages.json';
 
 export default function Home() {
   return (
@@ -21,6 +24,16 @@ export default function Home() {
       <StyledLink href="/about">About</StyledLink>
       <StyledButton variant='secondary' onClick={() => console.log("Button clicked")}>Fund us</StyledButton>
       <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink>
+
+      <div className={styles.blueBlock}>
+        <div className={styles.title}>
+          Advantages
+        </div>
+        <div className={styles.advantagesWrapper}>
+          {advantages.map((advantage, index) => <Advantage />)} 
+        </div>
+      </div>
+
       </main>
      
 
