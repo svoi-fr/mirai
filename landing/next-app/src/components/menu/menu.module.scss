@@ -91,8 +91,13 @@
     }
 
     .menuItem {
-        margin: 16px 0;
+        margin: 0;
         text-align: center;
+
+        a {
+            display: block;
+            padding: 20px 0;
+        }
     }
 }
   

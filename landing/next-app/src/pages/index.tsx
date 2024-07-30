@@ -16,38 +16,101 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <header>
+      <header className={styles.header}>
+        <section>
+          {/* <Logo /> */}
           <Menu />
-        </header>
-      <StyledButton onClick={() => console.log("Button clicked")}>Start Chatting</StyledButton>
-      <StyledLink href="/about">About</StyledLink>
-      <StyledButton variant='secondary' onClick={() => console.log("Button clicked")}>Fund us</StyledButton>
-      <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink>
+        </section>
+      </header>
 
-      <div className={styles.blueBlock}>
-        <div className={styles.title}>
-          Advantages
-        </div>
-        <div className={styles.advantagesWrapper}>
-          {advantages.map((advantage, index) => <Advantage />)} 
-        </div>
-      </div>
+      <main className={styles.main}>
+        {/* <StyledButton onClick={() => console.log("Button clicked")}>Start Chatting</StyledButton>
+        <StyledLink href="/about">About</StyledLink>
+        <StyledButton variant='secondary' onClick={() => console.log("Button clicked")}>Fund us</StyledButton>
+        <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink> */}
 
+        <div className={styles.first}>
+          <div className="first--left">
+            <h1>
+              <span color="#00A2AF">AI Assistant</span>{" "}
+              <span>for Refugees in Europe and Those Who Help Them</span>
+            </h1>
+            <p>Get Instant Answers to Important Questions</p>
+            <StyledButton onClick={() => console.log("Button clicked")}>
+              Start Chatting
+            </StyledButton>
+            <StyledButton
+              variant="secondary"
+              onClick={() => console.log("Button clicked")}
+            >
+              Donate
+            </StyledButton>
+          </div>
+          <div className="desktop first--right">Image</div>
+        </div>
+
+        <section className="about">
+          <div className="desktop about--left">Image</div>
+          <div className="about--right">
+            <h1>About the Project</h1>
+            <p>
+              We understand how difficult it can be to navigate through a
+              mountain of information when you first arrive in a new country.
+              Where should you go? Whom should you contact? What should you do?
+              <br />
+              The MirAI chatbot, powered by artificial intelligence, helps
+              displaced persons in Europe feel more comfortable in their new
+              surroundings. If you are a refugee who has recently arrived in
+              Europe or an organization providing support to them, this bot is
+              for you. It is especially useful for those who do not speak the
+              language of the host country.
+              <br />
+              You will receive instant answers to important questions: about
+              rights and responsibilities, legal procedures, medical assistance,
+              as well as educational and employment opportunities.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.howItWorks}>
+          <h1>How It Works?</h1>
+          <p>
+            We gather data from relevant communities and official websites,
+            verify it, pass it to the bot, and it uses algorithms to find the
+            context and provide you with the necessary information.
+          </p>
+          <StyledButton
+            variant="secondary"
+            onClick={() => console.log("Button clicked")}
+          >
+            Start Chatting
+          </StyledButton>
+        </section>
+
+        <section className="advantages">
+            <div className={styles.title}>
+              Advantages
+            </div>
+            <div className={styles.advantagesWrapper}>
+              {advantages.map((advantage, index) => <Advantage />)} 
+            </div>
+        </section>
+
+        <section className="pre-footer">
+          <Menu />
+        </section>
       </main>
-     
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <section>
+          <p>© 2024 Mir ai - Tech startup . All Rights Reserved.</p>
+          <div>
+            <p>Follow us:</p>
+            <ul>
+              <li>Telegram</li>
+            </ul>
+          </div>
+        </section>
       </footer>
     </div>
   );

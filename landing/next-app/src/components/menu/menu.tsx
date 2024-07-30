@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './menu.module.css';
+import styles from './menu.module.scss';
 import cn from 'classnames';
 
 const HamburgerMenu: React.FC = () => {
