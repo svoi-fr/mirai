@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styled-button.module.css';
+import styles from './styled-button.module.scss';
 import cn from 'classnames';
 
 type ButtonProps = {

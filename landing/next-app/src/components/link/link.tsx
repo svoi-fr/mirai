@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styled-link.module.css';
+import styles from './styled-link.module.scss';
 import cn from 'classnames';
 
 type LinkProps = {
