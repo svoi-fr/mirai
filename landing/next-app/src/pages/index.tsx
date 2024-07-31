@@ -31,23 +31,25 @@ export default function Home() {
         <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink> */}
 
         <div className={styles.first}>
-          <div className="first--left">
-            <h1>
-              <span color="#00A2AF">AI Assistant</span>{" "}
-              <span>for Refugees in Europe and Those Who Help Them</span>
-            </h1>
-            <p>Get Instant Answers to Important Questions</p>
-            <StyledButton onClick={() => console.log("Button clicked")}>
-              Start Chatting
-            </StyledButton>
-            <StyledButton
-              variant="secondary"
-              onClick={() => console.log("Button clicked")}
-            >
-              Donate
-            </StyledButton>
+          <div className={styles.adaptiveContainer}>
+            <div className="first--left">
+              <h1>
+                <span color="#00A2AF">AI Assistant</span>{" "}
+                <span>for Refugees in Europe and Those Who Help Them</span>
+              </h1>
+              <p>Get Instant Answers to Important Questions</p>
+              <StyledButton onClick={() => console.log("Button clicked")}>
+                Start Chatting
+              </StyledButton>
+              <StyledButton
+                variant="secondary"
+                onClick={() => console.log("Button clicked")}
+              >
+                Donate
+              </StyledButton>
+            </div>
+            <div className="desktop first--right">Image</div>
           </div>
-          <div className="desktop first--right">Image</div>
         </div>
 
         <section className={styles.about}>

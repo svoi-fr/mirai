@@ -19,10 +19,9 @@
 
 .adaptiveContainer {
   max-width: 1210px;
+  padding: 0 20px;
 
-  @media screen and (max-width: 600px) {
-    padding: 0 20px;
-  }
+  @media screen and (max-width: 600px) {}
 }
 
 .footer {
@@ -200,6 +199,10 @@
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 15px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: auto auto;
+  }
 
   @media screen and (max-width: 768px) {
     display: flex;
