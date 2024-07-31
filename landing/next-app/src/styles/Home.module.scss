@@ -21,7 +21,8 @@
   max-width: 1210px;
   padding: 0 20px;
 
-  @media screen and (max-width: 600px) {}
+  @media screen and (max-width: 600px) {
+  }
 }
 
 .footer {
@@ -60,7 +61,11 @@
   line-height: 1.15;
   font-size: 4rem;
   color: white;
-  font-size: clamp(var(--min-header-font-size), 2vw + 1rem, var(--max-header-font-size));
+  font-size: clamp(
+    var(--min-header-font-size),
+    2vw + 1rem,
+    var(--max-header-font-size)
+  );
   text-align: center;
 }
 
@@ -161,9 +166,11 @@
   display: flex;
   flex-direction: column;
 
-  h1 {}
+  h1 {
+  }
 
-  p {}
+  p {
+  }
 }
 
 .howItWorks {
@@ -173,9 +180,11 @@
   display: flex;
   flex-direction: column;
 
-  h1 {}
+  h1 {
+  }
 
-  p {}
+  p {
+  }
 }
 
 .advantages {
@@ -183,7 +192,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(90deg, #104872 23.54%, #11285B 99.09%);
+  background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
   padding: 20px;
   margin: 0;
 
@@ -192,7 +201,6 @@
     flex-direction: column;
     padding: 0;
   }
-
 }
 
 .advantagesWrapper {
@@ -208,5 +216,4 @@
     display: flex;
     flex-direction: column;
   }
-
 }

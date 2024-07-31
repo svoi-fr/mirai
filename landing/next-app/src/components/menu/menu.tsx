@@ -29,28 +29,28 @@ const HamburgerMenu: React.FC = () => {
 
   return (
     <nav className={styles.navbar} ref={menuRef}>
-      <ul className={
-        cn(styles.menu, {
-            [styles.open]: isOpen
-        })}>
-        <li className={styles.menuItem}><a href="#">Home</a></li>
-        <li className={styles.menuItem}><a href="#">About</a></li>
-        <li className={styles.menuItem}><a href="#">Services</a></li>
-        <li className={styles.menuItem}><a href="#">Contact</a></li>
+      <ul
+        className={cn(styles.menu, {
+          [styles.open]: isOpen,
+        })}
+      >
+        <li className={styles.menuItem}>
+          <a href="#">Home</a>
+        </li>
+        <li className={styles.menuItem}>
+          <a href="#">About</a>
+        </li>
+        <li className={styles.menuItem}>
+          <a href="#">Services</a>
+        </li>
+        <li className={styles.menuItem}>
+          <a href="#">Contact</a>
+        </li>
       </ul>
       <div className={styles.hamburger} onClick={toggleMenu}>
-        <div className={cn(
-            styles.bar,
-            {[styles.bar1]: isOpen}
-        )} />
-        <div className={cn(
-            styles.bar,
-            {[styles.bar2]: isOpen}
-        )} />
-        <div className={cn(
-            styles.bar,
-            {[styles.bar3]: isOpen}
-        )} />
+        <div className={cn(styles.bar, { [styles.bar1]: isOpen })} />
+        <div className={cn(styles.bar, { [styles.bar2]: isOpen })} />
+        <div className={cn(styles.bar, { [styles.bar3]: isOpen })} />
       </div>
     </nav>
   );
