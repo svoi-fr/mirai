@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import StyledButton from "../components/button/styled-button";
 import StyledLink from "../components/link/link";
 import Menu from "../components/menu/menu";
 import { Advantage } from "../components/advantage/advantage";
 
 import advantages from '../consts/advantages.json';
+import { title } from "process";
 
 export default function Home() {
   return (
@@ -49,7 +50,8 @@ export default function Home() {
           <div className="desktop first--right">Image</div>
         </div>
 
-        <section className="about">
+        <section className={styles.about}>
+        <div className={styles.adaptiveContainer}>
           <div className="desktop about--left">Image</div>
           <div className="about--right">
             <h1>About the Project</h1>
@@ -70,30 +72,35 @@ export default function Home() {
               as well as educational and employment opportunities.
             </p>
           </div>
+          </div>
         </section>
 
         <section className={styles.howItWorks}>
-          <h1>How It Works?</h1>
-          <p>
-            We gather data from relevant communities and official websites,
-            verify it, pass it to the bot, and it uses algorithms to find the
-            context and provide you with the necessary information.
-          </p>
-          <StyledButton
-            variant="secondary"
-            onClick={() => console.log("Button clicked")}
-          >
-            Start Chatting
-          </StyledButton>
+          <div className={styles.adaptiveContainer}>
+            <h1>How It Works?</h1>
+            <p>
+              We gather data from relevant communities and official websites,
+              verify it, pass it to the bot, and it uses algorithms to find the
+              context and provide you with the necessary information.
+            </p>
+            <StyledButton
+              variant="secondary"
+              onClick={() => console.log("Button clicked")}
+            >
+              Start Chatting
+            </StyledButton>
+          </div>
         </section>
 
-        <section className="advantages">
+        <section className={styles.advantages}>
+          <div className={styles.adaptiveContainer}>
             <div className={styles.title}>
               Advantages
             </div>
             <div className={styles.advantagesWrapper}>
-              {advantages.map((advantage, index) => <Advantage />)} 
+              {advantages.map((advantage, index) => <Advantage title={advantage.title} description={advantage.description}/>)} 
             </div>
+          </div>
         </section>
 
         <section className="pre-footer">

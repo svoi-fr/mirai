@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,8 +7,18 @@
 }
 
 .main {
-  max-width: 1024px;
   margin: 0 auto;
+  padding: 5rem 0;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adaptiveContainer {
+  max-width: 1210px;
 
   @media screen and (max-width: 600px) {
     padding: 0 20px;
@@ -19,6 +28,7 @@
 .footer {
   width: 100%;
   height: 100px;
+  padding: 20px;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
@@ -50,6 +60,9 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: white;
+  font-size: clamp(var(--min-header-font-size), 2vw + 1rem, var(--max-header-font-size));
+  text-align: center;
 }
 
 .subtitle {
@@ -66,6 +79,7 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .code {
@@ -136,27 +150,60 @@
   }
 }
 
-
 .first {
-  padding: 150px 0 80px;
+  padding: 80px 0;
   display: flex;
 }
 
-.first {
+.about {
   padding: 80px 0;
-}
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
+  h1 {}
+
+  p {}
+}
 
 .howItWorks {
   padding: 80px 0;
-  text-align: center;
-  /* background: ; */
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-  h1 {
+  h1 {}
 
+  p {}
+}
+
+.advantages {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #104872 23.54%, #11285B 99.09%);
+  padding: 20px;
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
 
-  p {
-    
+}
+
+.advantagesWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
+
 }
