@@ -1,15 +1,21 @@
 import React from "react";
-import styles from "./advantage.module.css";
+import styles from "./advantage.module.scss";
 
-export const Advantage = () => {
+
+interface AdvantageProps {
+    title: string
+    description: string
+    icon?: string
+  }
+
+export const Advantage : React.FC<AdvantageProps> = ({ title, description, icon })  => {
   return (
     <div className={styles.box}>
         <div className={styles.icon} />
         <div className={styles.contentContainer}>
-            <div className={styles.h}>Verified Information</div>
+            <div className={styles.h}>{title}</div>
             <p className={styles.textWrapper}>
-                All information provided by the bot is verified for accuracy and relevance, ensuring its reliability and
-                timeliness.
+                {description}
             </p>
         </div>
     </div>
