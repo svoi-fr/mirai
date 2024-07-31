@@ -1,26 +1,32 @@
 [
-    {
-        "title": "Verified Information",
-        "description": "All information provided by the bot is verified for accuracy and relevance, ensuring its reliability and timeliness."
-    },
-    {
-        "title": "Multilingual Support",
-        "description": "The bot communicates in different languages, so you can speak in your native language and feel more confident."
-    },
-    {
-        "title": "24/7 Availability",
-        "description": "The chatbot is available around the clock, which is very convenient, especially in difficult situations when urgent help is needed."
-    },
-    {
-        "title": "Personalized  Approach",
-        "description": "Thanks to artificial intelligence, the bot adapts to each user's requests, offering exactly the information needed."
-    },
-    {
-        "title": "Confidentiality",
-        "description": "Communication with the bot is anonymous, guaranteeing safety and privacy."
-    },
-    {
-        "title": "User-Friendly Interface",
-        "description": "The bot works with popular messengers such as WhatsApp and Telegram, making it easy and convenient to use."
-    }
+  {
+    "title": "Verified Information",
+    "description": "All information provided by the bot is verified for accuracy and relevance, ensuring its reliability and timeliness.",
+    "icon": "verified"
+  },
+  {
+    "title": "Multilingual Support",
+    "description": "The bot communicates in different languages, so you can speak in your native language and feel more confident.",
+    "icon": "multilang"
+  },
+  {
+    "title": "24/7 Availability",
+    "description": "The chatbot is available around the clock, which is very convenient, especially in difficult situations when urgent help is needed.",
+    "icon": "hours"
+  },
+  {
+    "title": "Personalized  Approach",
+    "description": "Thanks to artificial intelligence, the bot adapts to each user's requests, offering exactly the information needed.",
+    "icon": "personalized"
+  },
+  {
+    "title": "Confidentiality",
+    "description": "Communication with the bot is anonymous, guaranteeing safety and privacy.",
+    "icon": "confidentiality"
+  },
+  {
+    "title": "User-Friendly Interface",
+    "description": "The bot works with popular messengers such as WhatsApp and Telegram, making it easy and convenient to use.",
+    "icon": "friendly"
+  }
 ]
