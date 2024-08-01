@@ -26,27 +26,24 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        {/* <StyledButton onClick={() => console.log("Button clicked")}>Start Chatting</StyledButton>
-        <StyledLink href="/about">About</StyledLink>
-        <StyledButton variant='secondary' onClick={() => console.log("Button clicked")}>Fund us</StyledButton>
-        <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink> */}
-
-        <div className={styles.hero}>
-          <div className={styles.adaptiveContainer}>
-            <h1>
-              <span color="#00A2AF">AI Assistant</span>{' '}
-              <span>for Refugees in Europe and Those Who Help Them</span>
-            </h1>
-            <p>Get Instant Answers to Important Questions</p>
-            <StyledButton onClick={() => console.log('Button clicked')}>
-              Start Chatting
-            </StyledButton>
-            <StyledButton
-              variant="secondary"
-              onClick={() => console.log('Button clicked')}
-            >
-              Donate
-            </StyledButton>
+        <div className={styles.adaptiveContainer}>
+          <div className={styles.hero}>
+            <div className={styles.heroContainer}>
+              <h1>
+                <span color="#00A2AF">AI Assistant</span>{' '}
+                <span>for Refugees in Europe and Those Who Help Them</span>
+              </h1>
+              <p>Get Instant Answers to Important Questions</p>
+              <StyledButton onClick={() => console.log('Button clicked')}>
+                Start Chatting
+              </StyledButton>
+              <StyledButton
+                variant="secondary"
+                onClick={() => console.log('Button clicked')}
+              >
+                Donate
+              </StyledButton>
+            </div>
             <div className="desktop first--right">Image</div>
           </div>
         </div>
@@ -55,7 +52,7 @@ export default function Home() {
           <div className={styles.adaptiveContainer}>
             <div className="desktop about--left">Image</div>
             <div className="about--right">
-              <h1>About the Project</h1>
+              <h2 className={styles.subtitle}>About the Project</h2>
               <p>
                 We understand how difficult it can be to navigate through a
                 mountain of information when you first arrive in a new country.
@@ -79,7 +76,7 @@ export default function Home() {
 
         <section className={styles.howItWorks}>
           <div className={styles.adaptiveContainer}>
-            <h1>How It Works?</h1>
+            <h2 className={styles.subtitle}>How It Works?</h2>
             <p>
               We gather data from relevant communities and official websites,
               verify it, pass it to the bot, and it uses algorithms to find the
@@ -96,7 +93,7 @@ export default function Home() {
 
         <section className={styles.advantages}>
           <div className={styles.adaptiveContainer}>
-            <div className={styles.title}>Advantages</div>
+            <h2 className={styles.subtitle}>Advantages</h2>
             <ul>
               {advantages.map((advantage) => (
                 <Advantage
