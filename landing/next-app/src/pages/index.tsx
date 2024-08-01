@@ -106,21 +106,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pre-footer">
+        <section className={styles.preFooter}>
           <Menu />
         </section>
       </main>
 
       <footer className={styles.footer}>
-        <section>
+        <div className={styles.footerContainer}>
           <p>© 2024 Mir ai - Tech startup . All Rights Reserved.</p>
-          <div>
+          <div className={styles.footerContentWrapper}>
             <p>Follow us:</p>
             <ul>
               <li>Telegram</li>
             </ul>
           </div>
-        </section>
+        </div>
       </footer>
     </div>
   );
