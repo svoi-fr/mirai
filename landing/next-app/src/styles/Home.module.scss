@@ -18,10 +18,18 @@
 }
 
 .adaptiveContainer {
-  max-width: 1210px;
   padding: 0 20px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1440px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1441px) {
+    width: 1210px;
   }
 }
 
@@ -33,27 +41,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.footer img {
-  margin-left: 0.5rem;
-}
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  img {
+    margin-left: 0.5rem;
+  }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
 }
 
 .title {
@@ -61,11 +65,9 @@
   line-height: 1.15;
   font-size: 4rem;
   color: white;
-  font-size: clamp(
-    var(--min-header-font-size),
-    2vw + 1rem,
-    var(--max-header-font-size)
-  );
+  font-size: clamp(var(--min-header-font-size),
+      2vw + 1rem,
+      var(--max-header-font-size));
   text-align: center;
 }
 
@@ -75,88 +77,21 @@
   font-size: 2rem;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: center;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family:
-    Menlo,
-    Monaco,
-    Lucida Console,
-    Liberation Mono,
-    DejaVu Sans Mono,
-    Bitstream Vera Sans Mono,
-    Courier New,
-    monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .logo {
   height: 1em;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-.first {
-  padding: 80px 0;
+.hero {
+  width: 100%;
+  align-items: center;
   display: flex;
+  flex-direction: column;
 }
 
 .about {
@@ -166,11 +101,9 @@
   display: flex;
   flex-direction: column;
 
-  h1 {
-  }
+  h1 {}
 
-  p {
-  }
+  p {}
 }
 
 .howItWorks {
@@ -180,11 +113,9 @@
   display: flex;
   flex-direction: column;
 
-  h1 {
-  }
+  h1 {}
 
-  p {
-  }
+  p {}
 }
 
 .advantages {
@@ -193,7 +124,6 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
-  padding: 20px;
   margin: 0;
 
   @media screen and (max-width: 768px) {
@@ -201,19 +131,21 @@
     flex-direction: column;
     padding: 0;
   }
-}
 
-.advantagesWrapper {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 15px;
+  ul {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
 
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: auto auto;
-  }
+    @media screen and (max-width: 1400px) {
+      grid-template-columns: repeat(2, auto);
+    }
 
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

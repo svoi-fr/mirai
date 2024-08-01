@@ -31,9 +31,8 @@ export default function Home() {
         <StyledButton variant='secondary' onClick={() => console.log("Button clicked")}>Fund us</StyledButton>
         <StyledLink variant='secondary' href="/about">Hell yeah</StyledLink> */}
 
-        <div className={styles.first}>
+        <div className={styles.hero}>
           <div className={styles.adaptiveContainer}>
-            <div className="first--left">
               <h1>
                 <span color="#00A2AF">AI Assistant</span>{' '}
                 <span>for Refugees in Europe and Those Who Help Them</span>
@@ -48,9 +47,8 @@ export default function Home() {
               >
                 Donate
               </StyledButton>
+              <div className="desktop first--right">Image</div>
             </div>
-            <div className="desktop first--right">Image</div>
-          </div>
         </div>
 
         <section className={styles.about}>
@@ -99,7 +97,7 @@ export default function Home() {
         <section className={styles.advantages}>
           <div className={styles.adaptiveContainer}>
             <div className={styles.title}>Advantages</div>
-            <div className={styles.advantagesWrapper}>
+            <ul>
               {advantages.map((advantage) => (
                 <Advantage
                   icon={advantage.icon as IconType}
@@ -107,7 +105,7 @@ export default function Home() {
                   description={advantage.description}
                 />
               ))}
-            </div>
+            </ul>
           </div>
         </section>
 

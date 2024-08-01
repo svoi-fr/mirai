@@ -29,12 +29,12 @@ export const Advantage: React.FC<AdvantageProps> = ({
   icon,
 }) => {
   return (
-    <div className={styles.box}>
+    <li className={styles.item}>
       {icon && icons[icon]}
       <div className={styles.contentContainer}>
         <div className={styles.h}>{title}</div>
         <p className={styles.textWrapper}>{description}</p>
       </div>
-    </div>
+    </li>
   );
 };
