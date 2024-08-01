@@ -32,8 +32,8 @@ export const Advantage: React.FC<AdvantageProps> = ({
     <li className={styles.item}>
       {icon && icons[icon]}
       <div className={styles.contentContainer}>
-        <div className={styles.h}>{title}</div>
-        <p className={styles.textWrapper}>{description}</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </li>
   );
