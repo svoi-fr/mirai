@@ -1,6 +1,12 @@
 :root {
   --min-header-font-size: 32px;
   --max-header-font-size: 50px;
+  --min-text-font-size: 16px;
+  --max-text-font-size: 20px;
+  --min-card-text-font-size: 12px;
+  --max-card-text-font-size: 14px;
+  --min-card-header-font-size: 16px;
+  --max-card-header-font-size: 24px;
   --min-screen-width: 336px;
   --max-screen-width: 1440px;
 }
