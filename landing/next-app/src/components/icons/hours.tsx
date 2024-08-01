@@ -22,7 +22,7 @@ const HoursIcon: React.FC<HoursIconProps> = ({ className }) => {
       </g>
       <defs>
         <clipPath id="clip0">
-          <rect width="28" height="28" fill="white"/>
+          <rect width="28" height="28" fill="white" />
         </clipPath>
       </defs>
     </svg>

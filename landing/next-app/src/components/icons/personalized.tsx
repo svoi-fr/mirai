@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface PersonalizedIconProps {
-  className: string;
+  className?: string;
 }
 
 const PersonalizedIcon: React.FC<PersonalizedIconProps> = ({ className }) => {

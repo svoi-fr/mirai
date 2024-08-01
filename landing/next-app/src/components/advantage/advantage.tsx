@@ -11,17 +11,17 @@ import { IconType } from '@/consts/consts';
 interface AdvantageProps {
   title: string;
   description: string;
-  icon?: IconType
+  icon?: IconType;
 }
 
 const icons = {
-  verified: <VerifiedIcon className={styles.icon} />,
-  confidentiality: <ConfidentialityIcon className={styles.icon}/>,
-  hours: <HoursIcon className={styles.icon}/>,
-  multilang:<MultilangIcon className={styles.icon}/>,
-  friendly: <FriendlyIcon className={styles.icon}/>,
-  personalized: <PersonalizedIcon className={styles.icon}/>
-}
+  verified: <VerifiedIcon />,
+  confidentiality: <ConfidentialityIcon />,
+  hours: <HoursIcon />,
+  multilang: <MultilangIcon />,
+  friendly: <FriendlyIcon />,
+  personalized: <PersonalizedIcon />,
+};
 
 export const Advantage: React.FC<AdvantageProps> = ({
   title,
@@ -30,7 +30,7 @@ export const Advantage: React.FC<AdvantageProps> = ({
 }) => {
   return (
     <li className={styles.item}>
-      {icon && icons[icon]}
+      {icon && <div className={styles.icon}>{icons[icon]}</div>}
       <div className={styles.contentContainer}>
         <h3>{title}</h3>
         <p>{description}</p>

@@ -1,1 +1,7 @@
-export type IconType = 'verified' | 'confidentiality' | 'hours' | 'multilang' | 'friendly' | 'personalized';
+export type IconType =
+  | 'verified'
+  | 'confidentiality'
+  | 'hours'
+  | 'multilang'
+  | 'friendly'
+  | 'personalized';

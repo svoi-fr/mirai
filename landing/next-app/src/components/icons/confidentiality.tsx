@@ -4,7 +4,9 @@ interface ConfidentialityIconProps {
   className?: string;
 }
 
-const ConfidentialityIcon: React.FC<ConfidentialityIconProps> = ({ className }) => {
+const ConfidentialityIcon: React.FC<ConfidentialityIconProps> = ({
+  className,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
