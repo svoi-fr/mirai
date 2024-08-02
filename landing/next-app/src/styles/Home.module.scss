@@ -24,7 +24,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 600px) and (max-width: 1440px) {
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
     width: 80%;
   }
 
@@ -67,7 +67,6 @@
     list-style: none;
   }
 
-
   p {
     color: white;
   }
@@ -96,11 +95,7 @@
 
 .footerContentWrapper {
   display: flex;
-
-
 }
-
-
 
 .description {
   line-height: 1.5;
@@ -117,10 +112,12 @@
 
 .hero {
   width: 100%;
-  align-items: center;
-  justify-content: center;
   display: grid;
   grid-template-columns: 3fr 2fr;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 
   padding-top: 150px;
   padding-bottom: 80px;
@@ -165,6 +162,28 @@
   }
 }
 
+.heroImage {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.heroBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to right, white 57%, #b6fdff 40%);
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
+}
+
 .subtitle {
   margin: 0;
   line-height: 1.15;
@@ -178,11 +197,45 @@
   padding: 80px 0;
   width: 100%;
   align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
   flex-direction: column;
 
-  p {}
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
 }
+
+.aboutImage {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.aboutBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to right, #b6fdff 33%, #104872 33%, #11285b 100%);
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
+  }
+}
+
 
 .howItWorks {
   padding: 80px 0;

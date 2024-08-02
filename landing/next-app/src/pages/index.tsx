@@ -9,6 +9,7 @@ import { Advantage } from '../components/advantage/advantage';
 import advantages from '../consts/advantages.json';
 import { title } from 'process';
 import { IconType } from '@/consts/consts';
+import cn from 'classnames';
 
 export default function Home() {
   return (
@@ -26,53 +27,59 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <div className={styles.adaptiveContainer}>
-          <div className={styles.hero}>
-            <div className={styles.heroContainer}>
-              <h1>
-                <span color="#00A2AF">AI Assistant</span>{' '}
-                <span>for Refugees in Europe and Those Who Help Them</span>
-              </h1>
-              <p>Get Instant Answers to Important Questions</p>
-              <StyledButton onClick={() => console.log('Button clicked')}>
-                Start Chatting
-              </StyledButton>
-              <StyledButton
-                variant="secondary"
-                onClick={() => console.log('Button clicked')}
-              >
-                Donate
-              </StyledButton>
+        <div className={styles.heroBackground}>
+          <div className={styles.adaptiveContainer}>
+            <div className={styles.hero}>
+              <div className={styles.heroContainer}>
+                <h1>
+                  <span color="#00A2AF">AI Assistant</span>{' '}
+                  <span>for Refugees in Europe and Those Who Help Them</span>
+                </h1>
+                <p>Get Instant Answers to Important Questions</p>
+                <StyledButton onClick={() => console.log('Button clicked')}>
+                  Start Chatting
+                </StyledButton>
+                <StyledButton
+                  variant="secondary"
+                  onClick={() => console.log('Button clicked')}
+                >
+                  Donate
+                </StyledButton>
+              </div>
+              <div className={styles.heroImage}>Image</div>
             </div>
-            <div className="desktop first--right">Image</div>
           </div>
         </div>
 
-        <section className={styles.about}>
-          <div className={styles.adaptiveContainer}>
-            <div className="desktop about--left">Image</div>
-            <div className="about--right">
-              <h2 className={styles.subtitle}>About the Project</h2>
-              <p>
-                We understand how difficult it can be to navigate through a
-                mountain of information when you first arrive in a new country.
-                Where should you go? Whom should you contact? What should you
-                do?
-                <br />
-                The MirAI chatbot, powered by artificial intelligence, helps
-                displaced persons in Europe feel more comfortable in their new
-                surroundings. If you are a refugee who has recently arrived in
-                Europe or an organization providing support to them, this bot is
-                for you. It is especially useful for those who do not speak the
-                language of the host country.
-                <br />
-                You will receive instant answers to important questions: about
-                rights and responsibilities, legal procedures, medical
-                assistance, as well as educational and employment opportunities.
-              </p>
+
+          <div className={styles.aboutBackground}>
+            <div className={styles.adaptiveContainer}>
+            <div className={styles.about}>
+              <div className={styles.aboutImage}>Image</div>
+              <div className="about--right">
+                <h2 className={styles.subtitle}>About the Project</h2>
+                <p>
+                  We understand how difficult it can be to navigate through a
+                  mountain of information when you first arrive in a new
+                  country. Where should you go? Whom should you contact? What
+                  should you do?
+                  <br />
+                  The MirAI chatbot, powered by artificial intelligence, helps
+                  displaced persons in Europe feel more comfortable in their new
+                  surroundings. If you are a refugee who has recently arrived in
+                  Europe or an organization providing support to them, this bot
+                  is for you. It is especially useful for those who do not speak
+                  the language of the host country.
+                  <br />
+                  You will receive instant answers to important questions: about
+                  rights and responsibilities, legal procedures, medical
+                  assistance, as well as educational and employment
+                  opportunities.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <section className={styles.howItWorks}>
           <div className={styles.adaptiveContainer}>
