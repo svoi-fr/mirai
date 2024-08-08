@@ -1,0 +1,32 @@
+.button {
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button--blue {
+  background-color: #00a2af;
+
+  &:hover {
+    background-color: #008a97;
+  }
+
+  &:active {
+    background-color: #007a86;
+  }
+}
+
+.button--dark-blue {
+  background-color: #104872;
+
+  &:hover {
+    background-color: #0d3a61;
+  }
+
+  &:active {
+    background-color: #0b324e;
+  }
+}

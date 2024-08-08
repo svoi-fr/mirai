@@ -1,0 +1,284 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adaptiveContainer {
+  padding: 0 20px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1440px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1441px) {
+    width: 1210px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border-top: 1px solid #eaeaea;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
+  margin: 0;
+
+  img {
+    margin-left: 0.5rem;
+  }
+
+  a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  p {
+    color: white;
+  }
+
+  li {
+    color: white;
+  }
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1440px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1441px) {
+    width: 1210px;
+  }
+}
+
+.footerContentWrapper {
+  display: flex;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: center;
+  font-size: clamp(var(--min-text-font-size),
+      1.5vw + 0.5rem,
+      var(--max-text-font-size));
+}
+
+.logo {
+  height: 1em;
+}
+
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+
+  padding-top: 150px;
+  padding-bottom: 80px;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 3.5rem;
+    line-height: 1.15;
+    font-size: clamp(var(--min-main-title-font-size),
+        2vw + 1rem,
+        var(--max-main-title-font-size));
+    text-align: left;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  p {
+    margin-bottom: 3.5rem;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.heroImage {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.heroBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to right, white 57%, #b6fdff 40%);
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  line-height: 1.15;
+  font-size: clamp(var(--min-header-font-size),
+      2vw + 1rem,
+      var(--max-header-font-size));
+  text-align: center;
+}
+
+.about {
+  padding: 80px 0;
+  width: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.aboutImage {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.aboutBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to right, #b6fdff 33%, #104872 33%, #11285b 100%);
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
+  }
+}
+
+
+.howItWorks {
+  padding: 80px 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  p {}
+}
+
+.advantages {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  ul {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
+
+    @media screen and (max-width: 1400px) {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
