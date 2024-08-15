@@ -238,14 +238,25 @@
   background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
   margin: 0;
 
+  h2 {
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     padding: 40px 0;
-  }
 
-  h2 {
-    color: white;
+    h2 {
+      margin-bottom: 30px;
+    }
   }
 
   ul {

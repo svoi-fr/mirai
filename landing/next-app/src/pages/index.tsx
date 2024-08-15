@@ -38,7 +38,7 @@ export default function Home() {
                   <span>for Refugees in Europe and Those Who Help Them</span>
                 </h1>
                 <p>Get Instant Answers to Important Questions</p>
-                <StyledButton onClick={() => console.log('Button clicked')}>
+                <StyledButton size="large" onClick={() => console.log('Button clicked')}>
                   Start Chatting
                 </StyledButton>
                 {/* <StyledButton
