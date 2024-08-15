@@ -8,13 +8,17 @@
 
 .main {
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 30px 0 0;
   width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .mainTitle {
+    color: #00A2AF;
+  }
 }
 
 .adaptiveContainer {
@@ -31,70 +35,6 @@
   @media screen and (min-width: 1441px) {
     width: 1210px;
   }
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  padding: 20px;
-  border-top: 1px solid #eaeaea;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(90deg, #104872 23.54%, #11285b 99.09%);
-  margin: 0;
-
-  img {
-    margin-left: 0.5rem;
-  }
-
-  a {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  a:hover,
-  a:focus,
-  a:active {
-    text-decoration: underline;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  p {
-    color: white;
-  }
-
-  li {
-    color: white;
-  }
-}
-
-.footerContainer {
-  display: flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 600px) and (max-width: 1440px) {
-    width: 80%;
-  }
-
-  @media screen and (min-width: 1441px) {
-    width: 1210px;
-  }
-}
-
-.footerContentWrapper {
-  display: flex;
 }
 
 .description {
@@ -117,6 +57,10 @@
 
   @media screen and (max-width: 768px) {
     display: flex;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
   }
 
   padding-top: 150px;
@@ -163,6 +107,12 @@
 }
 
 .heroImage {
+  margin-top: -30px;
+  
+  img {
+    max-width: 400px;
+  }
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -176,7 +126,7 @@
   background: linear-gradient(to right, white 57%, #b6fdff 40%);
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2.5rem;
+    background: linear-gradient(to right, white 50%, #b6fdff 40%);
   }
 
   @media screen and (max-width: 768px) {
@@ -186,6 +136,7 @@
 
 .subtitle {
   margin: 0;
+  margin-bottom: 20px;
   line-height: 1.15;
   font-size: clamp(var(--min-header-font-size),
       2vw + 1rem,
@@ -201,6 +152,23 @@
   grid-template-columns: 2fr 5fr;
   flex-direction: column;
 
+  .aboutRight {
+    padding-left: 40px;
+    max-width: 750px;
+
+    h2 {
+      text-align: left;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 10px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
     display: flex;
   }
@@ -215,6 +183,10 @@
 }
 
 .aboutImage {
+  img {
+    max-width: 280px;
+  }
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -228,7 +200,11 @@
   background: linear-gradient(to right, #b6fdff 33%, #104872 33%, #11285b 100%);
 
   @media screen and (max-width: 1024px) {
-    margin-bottom: 2.5rem;
+    background: linear-gradient(to right, #b6fdff 34%, #104872 33%, #11285b 100%);
+
+    img {
+      max-width: 200px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -240,11 +216,18 @@
 .howItWorks {
   padding: 80px 0;
   width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  background: url('/how-it-works.png') center center no-repeat;
+  background-size: 80%;
 
-  p {}
+  .adaptiveContainer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages {
@@ -258,7 +241,7 @@
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 40px 0;
   }
 
   h2 {

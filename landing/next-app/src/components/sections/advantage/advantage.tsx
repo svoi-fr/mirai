@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './advantage.module.scss';
-import VerifiedIcon from '../icons/verified';
-import ConfidentialityIcon from '../icons/confidentiality';
-import HoursIcon from '../icons/hours';
-import MultilangIcon from '../icons/multilang';
-import FriendlyIcon from '../icons/friendly';
-import PersonalizedIcon from '../icons/personalized';
+import VerifiedIcon from '@icons/verified';
+import ConfidentialityIcon from '@icons/confidentiality';
+import HoursIcon from '@icons/hours';
+import MultilangIcon from '@icons/multilang';
+import FriendlyIcon from '@icons/friendly';
+import PersonalizedIcon from '@icons/personalized';
 import { IconType } from '@/consts/consts';
 
 interface AdvantageProps {
