@@ -48,7 +48,7 @@ export default function Home() {
                   Donate
                 </StyledButton> */}
               </div>
-              <div className={styles.heroImage}><img src="/logo.png" /></div>
+              <div className={styles.heroImageContainer}><img src="/logo.png" /></div>
             </div>
           </div>
         </div>

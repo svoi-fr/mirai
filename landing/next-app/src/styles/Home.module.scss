@@ -106,12 +106,24 @@
   }
 }
 
-.heroImage {
-  margin-top: -30px;
-  
+.heroImageContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+  height: 100%;
+
   img {
-    max-width: 400px;
+    width: 400px;
+    height: 100%;
+
+    @media screen and (max-width: 1440px) {
+      width: 30vw;
+      height: 30vw;
+    }
   }
+
+
 
   @media screen and (max-width: 768px) {
     display: none;
