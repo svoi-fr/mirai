@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-        <section>
+        <section className={styles.menu}>
           {/* <Logo /> */}
           <Menu />
         </section>

@@ -2,10 +2,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
 
-  section {
-    padding: 0;
-  }
+.menu {
+  padding: 0;
 }
 
 .main {
@@ -57,7 +57,7 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
 
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 80px;
 
   @media screen and (max-width: 768px) {
