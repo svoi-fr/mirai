@@ -143,8 +143,6 @@
     }
   }
 
-
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -215,14 +213,29 @@
 }
 
 .aboutImage {
+  display: flex;
+  align-items: center;
+
   img {
     max-width: 280px;
-  }
+    width: 100%;
+    height: auto;
+    padding: 10px;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+    @media screen and (max-width: 1440px) {
+      max-width: 20vw;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 25vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
+
 
 .aboutBackground {
   display: flex;
