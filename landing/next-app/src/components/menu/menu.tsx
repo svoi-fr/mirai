@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import menu from '../../consts/menu.json';
 import styles from './menu.module.scss';
 import cn from 'classnames';
 
@@ -27,6 +28,20 @@ const HamburgerMenu: React.FC = () => {
     };
   }, [isOpen]);
 
+  const goTo = (link: string): void => {
+    // toggleMenu();
+    console.log('1111');
+  };
+
+  // const goTo = (link: string) => {
+  //   toggleMenu();
+  //   console.log('link', link)
+  //   const element = document.querySelector('.' + link);
+  //   console.log('1111');
+  //   element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   console.log('2222');
+  // };
+
   return (
     <nav className={styles.navbar} ref={menuRef}>
       <ul
@@ -34,18 +49,12 @@ const HamburgerMenu: React.FC = () => {
           [styles.open]: isOpen,
         })}
       >
-        <li className={styles.menuItem}>
-          <a href="#">Home</a>
-        </li>
-        <li className={styles.menuItem}>
-          <a href="#">About</a>
-        </li>
-        <li className={styles.menuItem}>
-          <a href="#">Services</a>
-        </li>
-        <li className={styles.menuItem}>
-          <a href="#">Contact</a>
-        </li>
+        {menu.map((menuItem, index) => (
+          <li key={index} className={styles.menuItem}>
+            <div onClick={goTo(menuItem.link)}>{menuItem.title}</div>
+            {/* <div>{menuItem.title}</div> */}
+          </li>
+        ))}
       </ul>
       <div className={styles.hamburger} onClick={toggleMenu}>
         <div className={cn(styles.bar, { [styles.bar1]: isOpen })} />

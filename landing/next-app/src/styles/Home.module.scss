@@ -1,3 +1,24 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(4, 12, 31, 0.5);
+
+  .adaptiveContainer {
+    display: flex;
+  }
+  
+  .logo img {
+    width: 70px;
+    // width: 174px;
+    margin-right: 60px;
+  }
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -10,7 +31,7 @@
 
 .main {
   margin: 0 auto;
-  padding: 0;
+  padding-top: 96px;
   width: 100%;
   flex: 1;
   display: flex;
@@ -24,6 +45,8 @@
 }
 
 .adaptiveContainer {
+  margin: 0 auto;
+
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 0 20px;
@@ -49,10 +72,6 @@
   font-size: clamp(var(--min-text-font-size),
       1.5vw + 0.5rem,
       var(--max-text-font-size));
-}
-
-.logo {
-  height: 1em;
 }
 
 .hero {
@@ -125,8 +144,6 @@
 .heroImageContainer {
   display: flex;
   align-items: center;
-  margin-left: 30px;
-
   height: 100%;
 
   img {
@@ -187,7 +204,7 @@
   flex-direction: column;
 
   .aboutRight {
-    padding-left: 40px;
+    padding-left: 80px;
     max-width: 750px;
 
     h2 {

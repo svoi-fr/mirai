@@ -1,11 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import StyledButton from '../components/button/styled-button';
-import StyledLink from '../components/link/link';
 import Menu from '../components/menu/menu';
 
-import { Advantage } from '../components/sections/advantage/advantage';
+import { Advantage } from '../components/advantage/advantage';
 import { Footer } from '../components/footer/footer';
 
 import advantages from '../consts/advantages.json';
@@ -17,15 +15,15 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>MirAI</title>
+        <title>Mir AI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header className={styles.header}>
-        <section className={styles.menu}>
-          {/* <Logo /> */}
+        <div className={styles.adaptiveContainer}>
+          <a className={styles.logo} href="/"><img src="/logo.png" /></a>
           <Menu />
-        </section>
+        </div>
       </header>
 
       <main className={styles.main}>
@@ -38,12 +36,11 @@ export default function Home() {
                   <span>for Refugees in Europe and Those Who Help Them</span>
                 </h1>
                 <p>Get Instant Answers to Important Questions</p>
-                <StyledButton size="large" onClick={() => console.log('Button clicked')}>
+                <StyledButton size="large">
                   Start Chatting
                 </StyledButton>
                 {/* <StyledButton
                   variant="secondary"
-                  onClick={() => console.log('Button clicked')}
                 >
                   Donate
                 </StyledButton> */}
@@ -96,7 +93,6 @@ export default function Home() {
             <StyledButton
               variant="secondary"
               size="large"
-              onClick={() => console.log('Button clicked')}
             >
               Start Chatting
             </StyledButton>
@@ -119,9 +115,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.preFooter}>
+        {/* <section className={styles.preFooter}>
           <Menu />
-        </section>
+        </section> */}
       </main>
 
       <Footer />
